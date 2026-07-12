@@ -12,8 +12,25 @@ const links = [
   { href: '/contato', label: 'Contato' },
 ];
 
-export default function MobileMenu() {
+interface MobileMenuProps {
+  layout?: 'vertical' | 'horizontal';
+}
+
+export default function MobileMenu({ layout = 'vertical' }: MobileMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Estilos conforme o layout
+  const navClasses = layout === 'horizontal' ? 'px-4 py-3' : '';
+
+  const ulClasses =
+    layout === 'horizontal'
+      ? 'flex flex-row items-center gap-4 whitespace-nowrap'
+      : 'flex flex-col';
+
+  const linkClasses =
+    layout === 'horizontal'
+      ? 'text-white block text-xs font-medium uppercase tracking-wider transition-colors hover:text-anima-coral'
+      : 'text-white block px-2 py-1 text-sm font-medium uppercase tracking-wider transition-colors hover:text-anima-coral';
 
   return (
     <div className="relative md:hidden">
@@ -29,14 +46,14 @@ export default function MobileMenu() {
 
       {/* Dropdown de Opções */}
       {isOpen && (
-        <nav className="absolute left-0 top-full z-50 w-52 rounded-xl">
-          <ul className="flex flex-col">
+        <nav className={`absolute left-0 top-full z-50 mt-2 ${navClasses}`}>
+          <ul className={ulClasses}>
             {links.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block px-3 py-1 text-xs font-medium uppercase tracking-wider text-white/85 transition-colors hover:text-anima-coral"
+                  className={linkClasses}
                 >
                   {link.label}
                 </Link>

@@ -24,29 +24,32 @@ export default function Hero() {
       {/* Conteúdo */}
       <div className="relative z-10 flex h-full flex-col">
         {/* Header Transparente */}
-        <header className="mt-3 flex items-center justify-between px-4 py-4 md:mt-5 md:px-8 lg:px-16 lg:py-6">
-          {/* Navegação */}
-          <div>
-            <div className="hidden items-center justify-center md:flex">
-              <Navigation variant="transparent" />
+        <header className="px-4 py-4 md:px-8 md:py-6 lg:px-16 lg:py-11">
+          <div className="relative flex items-center justify-between">
+            {/* ESQUERDA: Navegação + Menu */}
+            <div>
+              <div className="hidden md:block">
+                <Navigation variant="transparent" />
+              </div>
+              <MobileMenu />
             </div>
-            {/* Menu hamburguer */}
-            <MobileMenu />
-          </div>
-          {/* Logo Central */}
-          <div className="absolute left-1/2 -translate-x-1/2">
-            <div className="scale-75 md:scale-100">
-              <Logo variant="monograma" className="drop-shadow-lg" />
+
+            {/* CENTRO: Logo */}
+            <div className="absolute left-1/2 -translate-x-1/2">
+              <div className="scale-75 md:scale-100">
+                <Logo variant="monograma" className="drop-shadow-lg" />
+              </div>
             </div>
-          </div>
-          {/* Botão Agendar Aula */}
-          <div>
-            <Link
-              href="/contato"
-              className="inline-flex items-center rounded-full border-none bg-transparent px-3 py-1 text-xs font-medium text-white transition-all hover:text-anima-coral/80 md:px-4 md:text-sm"
-            >
-              Agendar Aula
-            </Link>
+
+            {/* DIREITA: Botão Agendar */}
+            <div className="ml-auto md:ml-0">
+              <Link
+                href="/contato"
+                className="inline-flex items-center rounded-full border-none bg-transparent px-3 py-1 text-xs font-medium text-white transition-all hover:text-anima-coral/80 md:px-4 md:text-sm"
+              >
+                Agendar Aula
+              </Link>
+            </div>
           </div>
         </header>
 

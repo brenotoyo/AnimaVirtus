@@ -7,11 +7,11 @@ export default function InstitutionSection() {
       {/* Lista */}
       <ul>
         {/* Nossa história */}
-        <li className="mx-auto mb-40 flex max-w-7xl items-center justify-center gap-12">
+        <li className="mx-auto mb-16 flex max-w-7xl flex-col items-center justify-center gap-8 md:mb-40 md:flex-row md:gap-12">
           {/* Imagem à Esquerda */}
-          <div className="relative w-1/2">
+          <div className="relative w-full md:w-1/2">
             {/* Quadrado Decorativo */}
-            <div className="absolute -bottom-4 -right-4 z-0 h-40 w-40 border-2 border-anima-coral/80" />
+            <div className="absolute -bottom-3 -right-3 z-0 h-24 w-24 border-2 border-anima-coral/80 md:-bottom-4 md:-right-4 lg:h-40 lg:w-40" />
             {/* Container da Imagem */}
             <div className="relative z-10 aspect-[6/4] overflow-hidden">
               <Image
@@ -24,11 +24,11 @@ export default function InstitutionSection() {
             </div>
           </div>
           {/* Texto à Direita */}
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <h4 className="mb-4 text-base font-bold uppercase tracking-widest text-anima-coral">
               NOSSA HISTÓRIA
             </h4>
-            <h2 className="mb-6 font-serif text-5xl font-semibold text-white md:text-6xl">
+            <h2 className="mb-6 font-serif text-4xl font-semibold text-white md:text-5xl lg:text-6xl">
               Ânima Virtus
             </h2>
             <div className="space-y-6 text-white/80">
@@ -46,13 +46,13 @@ export default function InstitutionSection() {
         </li>
 
         {/* Nosso espaço */}
-        <li className="mx-auto mb-36 flex max-w-7xl items-center justify-center gap-12">
+        <li className="mx-auto mb-0 flex max-w-7xl flex-col items-center justify-center gap-8 md:mb-36 md:flex-row md:gap-12">
           {/* Texto à esquerda */}
-          <div className="w-1/2">
+          <div className="order-2 w-full md:order-1 md:w-1/2">
             <h4 className="mb-4 text-base font-bold uppercase tracking-widest text-anima-coral">
               NOSSO ESPAÇO
             </h4>
-            <h2 className="mb-6 font-serif text-5xl font-semibold text-white md:text-6xl">
+            <h2 className="mb-6 font-serif text-4xl font-semibold text-white md:text-5xl lg:text-6xl">
               Conservatório <br />
               de dança
             </h2>
@@ -67,9 +67,9 @@ export default function InstitutionSection() {
             </div>
           </div>
           {/* Imagem à direita */}
-          <div className="relative w-1/2">
+          <div className="relative order-1 w-full md:order-2 md:w-1/2">
             {/* Quadrado Decorativo */}
-            <div className="absolute -bottom-4 -left-4 z-0 h-40 w-40 border-2 border-anima-coral/80" />
+            <div className="absolute -bottom-3 -left-3 z-0 h-24 w-24 border-2 border-anima-coral/80 md:h-40 md:w-40 lg:-bottom-4 lg:-left-4" />
             {/* Container da Imagem */}
             <div className="relative z-10 aspect-[6/4] overflow-hidden">
               <Image
