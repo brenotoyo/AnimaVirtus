@@ -66,7 +66,7 @@ export default function AboutDirectorSection() {
               href="/sobre"
               className="inline-flex items-center border-b-2 border-anima-coral/70 py-1 font-medium text-white transition-all hover:border-anima-coral hover:text-anima-coral hover:shadow-lg"
             >
-              Conheça as dançarinas
+              Conheça o ambiente e as dançarinas
             </Link>
           </div>
         </div>
