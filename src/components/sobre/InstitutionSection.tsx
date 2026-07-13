@@ -32,7 +32,7 @@ export default function InstitutionSection() {
               Ânima Virtus
             </h2>
             <div className="space-y-6 text-white/80">
-              <p className="text-lg leading-relaxed">
+              <p className="text-base leading-relaxed md:text-lg">
                 Fundado em 2026, o{' '}
                 <strong className="font-semibold text-white">
                   Ânima Virtus
@@ -57,7 +57,7 @@ export default function InstitutionSection() {
               de dança
             </h2>
             <div className="space-y-6 text-white/80">
-              <p className="text-lg leading-relaxed">
+              <p className="text-base leading-relaxed md:text-lg">
                 Aqui oferecemos tal tal tal, com muito blá blá blá, e tantos
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
                 quos molestiae! Ab sint libero facilis. Inventore enim, saepe

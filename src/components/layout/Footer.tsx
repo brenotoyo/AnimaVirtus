@@ -7,16 +7,16 @@ export default function Footer() {
     <footer className="bg-anima-navyB px-6 py-8 text-white md:px-16 lg:px-24">
       <div className="max-w-9xl mx-auto">
         {/* Grid Principal */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-5 lg:gap-8">
           {/* Coluna 1 - Logo e Descrição */}
-          <div className="lg:col-span-2">
-            <Link href="/" className="">
+          <div className="col-span-2 flex flex-col items-center text-center md:items-start md:text-left">
+            <Link href="/" className="mb-6">
               <Image
                 src="/images/logos/Logo-Horizontal-SemFundoC.png"
                 alt="Ânima Virtus"
                 width={200}
                 height={60}
-                className="mb-6 h-auto w-64"
+                className="h-auto w-48 md:w-64"
               />
             </Link>
             <p className="max-w-md leading-relaxed text-white/70">
@@ -25,12 +25,13 @@ export default function Footer() {
               acolhedor e inspirador.
             </p>
           </div>
-          {/* Coluna 2 - Links Rápidos */}
-          <div>
-            <h4 className="mb-4 text-sm font-bold uppercase tracking-widest text-anima-coral">
+
+          {/* Coluna 2 - Navegação */}
+          <div className="col-span-1 text-center md:text-left">
+            <h4 className="mb-4 text-xs font-bold uppercase tracking-widest text-anima-coral md:text-sm">
               NAVEGAÇÃO
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-3 text-xs md:text-sm">
               <li>
                 <Link
                   href="/"
@@ -65,53 +66,58 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+
           {/* Coluna 3 - Contato */}
-          <div>
-            <h4 className="mb-4 text-sm font-bold uppercase tracking-widest text-anima-coral">
+          <div className="col-span-1 text-center md:text-left">
+            <h4 className="mb-4 text-xs font-bold uppercase tracking-widest text-anima-coral md:text-sm">
               Contato
             </h4>
-            <ul className="space-y-4">
-              <li className="flex items-center gap-3">
+            <ul className="space-y-1 md:space-y-2">
+              <li className="flex items-start justify-center gap-2 md:justify-start md:gap-3">
                 <Image
                   src="/images/icons/location.svg"
-                  alt="Bailarinas em ensaio"
-                  width={20}
-                  height={20}
+                  alt="Localização"
+                  width={16}
+                  height={16}
                   quality={85}
+                  className="mt-0.5 shrink-0 md:h-5 md:w-5"
                 />
-                <span className="text-sm text-white/70">
-                  Rua das Bailarinas, 123
-                  <br />
-                  Centro, São Paulo - SP
+                <span className="break-words text-xs leading-tight text-white/70 md:text-sm md:leading-relaxed">
+                  Rua das Bailarinas, 123 Centro, São Paulo - SP
                 </span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center justify-center gap-2 md:justify-start md:gap-3">
                 <Image
                   src="/images/icons/phone.svg"
-                  alt="Bailarinas em ensaio"
-                  width={20}
-                  height={20}
+                  alt="Telefone"
+                  width={16}
+                  height={16}
                   quality={85}
+                  className="shrink-0 md:h-5 md:w-5"
                 />
-                <span className="text-sm text-white/70">(11) 90101-1010</span>
+                <span className="break-words text-xs text-white/70 md:text-sm">
+                  (11) 90101-1010
+                </span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-start justify-center gap-2 md:justify-start md:gap-3">
                 <Image
                   src="/images/icons/envelope.svg"
-                  alt="Bailarinas em ensaio"
-                  width={20}
-                  height={20}
+                  alt="Email"
+                  width={16}
+                  height={16}
                   quality={85}
+                  className="mt-0.5 shrink-0 md:h-5 md:w-5"
                 />
-                <span className="text-sm text-white/70">
+                <span className="break-all text-xs leading-tight text-white/70 md:text-sm md:leading-relaxed">
                   contato@animavirtus.com.br
                 </span>
               </li>
             </ul>
           </div>
+
           {/* Redes Sociais */}
-          <div>
-            <h4 className="mb-4 text-sm font-bold uppercase tracking-widest text-anima-coral">
+          <div className="col-span-2 flex flex-col items-center md:col-span-1">
+            <h4 className="mb-4 text-xs font-bold uppercase tracking-widest text-anima-coral md:text-sm">
               SIGA-NOS
             </h4>
             <div className="flex gap-4">
@@ -124,7 +130,7 @@ export default function Footer() {
               >
                 <Image
                   src="/images/icons/instagram.svg"
-                  alt="Bailarinas em ensaio"
+                  alt="Instagram"
                   width={27}
                   height={27}
                   quality={85}
@@ -139,7 +145,7 @@ export default function Footer() {
               >
                 <Image
                   src="/images/icons/facebook.svg"
-                  alt="Bailarinas em ensaio"
+                  alt="Facebook"
                   width={27}
                   height={27}
                   quality={85}
@@ -154,7 +160,7 @@ export default function Footer() {
               >
                 <Image
                   src="/images/icons/youtube.svg"
-                  alt="Bailarinas em ensaio"
+                  alt="YouTube"
                   width={27}
                   height={27}
                   quality={85}
@@ -168,12 +174,12 @@ export default function Footer() {
         <div className="my-10 border-t border-white/10" />
 
         {/* Copyright */}
-        <div className="flex items-center justify-between gap-4 text-center text-sm text-white/50 md:flex-row md:text-left">
+        <div className="flex flex-col items-center gap-4 text-center text-xs text-white/50 md:flex-row md:justify-between md:text-left lg:text-sm">
           <p>
             © 2026 Ânima Virtus Conservatório de Dança. Todos os direitos
             reservados.
           </p>
-          <div className="flex gap-6">
+          <div className="flex flex-row gap-7 md:gap-6">
             <Link
               href="/politica-privacidade"
               className="transition-colors hover:text-anima-coral"

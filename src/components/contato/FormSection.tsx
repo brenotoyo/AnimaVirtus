@@ -97,88 +97,91 @@ export default function FormSection() {
   };
 
   return (
-    <section className="bg-anima-navy px-8 py-16">
-      <div className="mx-auto flex max-w-7xl justify-center gap-60 text-center">
+    <section className="bg-anima-navy px-4 py-10 md:px-8 md:py-16 lg:px-32">
+      <div className="mx-auto flex max-w-7xl flex-col justify-center gap-8 text-center md:flex-row md:gap-16 lg:gap-60">
         {/* textos informativos */}
-        <div className="w-1/2 text-start">
-          <h4 className="mb-4 text-base uppercase tracking-widest text-anima-coral">
+        <div className="w-full text-start md:w-1/2">
+          <h4 className="mb-3 text-sm uppercase tracking-widest text-anima-coral md:mb-4 md:text-base">
             FALE CONOSCO
           </h4>
-          <h2 className="mb-6 font-serif text-7xl font-bold text-white">
+          <h2 className="mb-4 font-serif text-4xl font-bold text-white md:mb-6 md:text-5xl lg:text-7xl">
             VAMOS DANÇAR JUNTOS
           </h2>
-          <p className="mb-12 w-4/5 leading-relaxed text-white/70">
+          <p className="mb-8 w-full leading-relaxed text-white/70 md:mb-12 md:w-4/5">
             Agende sua aula experimental ou tire dúvidas sobre matrículas,
             horários e modalidades. Será um prazer receber você.
           </p>
           {/* Lista de informações */}
-          <ul>
-            <li className="mb-5 flex items-center gap-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-anima-coral/15">
+          <ul className="space-y-4 md:space-y-5">
+            <li className="flex items-center gap-3 md:gap-4">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-anima-coral/15 md:h-10 md:w-10">
                 <Image
                   src="/images/Icons/location.svg"
                   alt="Ícone de localização"
-                  width={18}
-                  height={18}
+                  width={16}
+                  height={16}
+                  className="md:h-[18px] md:w-[18px]"
                 />
               </div>
               <div>
-                <h4 className="text-xs tracking-widest text-white/60">
+                <h4 className="text-[0.65rem] tracking-widest text-white/60 md:text-xs">
                   ENDEREÇO
                 </h4>
-                <p className="text-sm text-white">
+                <p className="break-words text-xs text-white md:text-sm">
                   Rua Fictícia, 00 - Jardins, São Paulo - SP
                 </p>
               </div>
             </li>
-            <li className="mb-5 flex items-center gap-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-anima-coral/15">
+            <li className="flex items-center gap-3 md:gap-4">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-anima-coral/15 md:h-10 md:w-10">
                 <Image
                   src="/images/Icons/phone.svg"
                   alt="Ícone de telefone"
-                  width={18}
-                  height={18}
+                  width={16}
+                  height={16}
                 />
               </div>
               <div>
-                <h4 className="text-xs tracking-widest text-white/60">
+                <h4 className="text-[0.65rem] tracking-widest text-white/60 md:text-xs">
                   TELEFONE
                 </h4>
-                <p className="text-sm text-white">
+                <p className="break-words text-xs text-white md:text-sm">
                   (11) 4948-9484 - WhatsApp (11) 90000-0000
                 </p>
               </div>
             </li>
-            <li className="mb-5 flex items-center gap-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-anima-coral/15">
+            <li className="flex items-center gap-3 md:gap-4">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-anima-coral/15 md:h-10 md:w-10">
                 <Image
                   src="/images/Icons/envelope.svg"
                   alt="Ícone de e-mail"
-                  width={18}
-                  height={18}
+                  width={16}
+                  height={16}
                 />
               </div>
               <div>
-                <h4 className="text-xs tracking-widest text-white/60">
+                <h4 className="text-[0.65rem] tracking-widest text-white/60 md:text-xs">
                   E-MAIL
                 </h4>
-                <p className="text-sm text-white">exemplo@email.com.br</p>
+                <p className="break-words text-xs text-white md:text-sm">
+                  exemplo@email.com.br
+                </p>
               </div>
             </li>
-            <li className="flex items-center gap-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-anima-coral/15">
+            <li className="flex items-center gap-3 md:gap-4">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-anima-coral/15 md:h-10 md:w-10">
                 <Image
                   src="/images/Icons/clock.svg"
                   alt="Ícone de horários"
-                  width={18}
-                  height={18}
+                  width={16}
+                  height={16}
                 />
               </div>
               <div>
-                <h4 className="text-xs tracking-widest text-white/60">
+                <h4 className="text-[0.65rem] tracking-widest text-white/60 md:text-xs">
                   HORÁRIOS
                 </h4>
-                <p className="text-sm text-white">
+                <p className="break-words text-xs text-white md:text-sm">
                   Seg a Sex - 8h às 21h -- Sáb - 9h às 14h
                 </p>
               </div>
@@ -190,18 +193,18 @@ export default function FormSection() {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="w-1/2 rounded-sm bg-white px-8 pb-20 pt-10 text-start"
+          className="w-full min-w-0 rounded-sm bg-white px-6 pb-12 pt-8 text-start md:w-1/2 md:px-8 md:pb-20 md:pt-10"
         >
-          <h3 className="text-2xl font-semibold text-anima-navy">
+          <h3 className="text-xl font-semibold text-anima-navy md:text-2xl">
             Envie uma mensagem
           </h3>
-          <h4 className="mb-7 text-anima-navy/80">
+          <h4 className="mb-5 text-sm text-anima-navy/80 md:mb-7 md:text-base">
             Respondemos em até um dia útil.
           </h4>
 
           {/* Mensagem de Sucesso */}
           {success && (
-            <div className="mb-4 rounded-lg border-2 border-green-500 bg-green-100 p-4 text-sm text-green-700">
+            <div className="mb-4 rounded-lg border-2 border-green-500 bg-green-100 p-3 text-xs text-green-700 md:p-4 md:text-sm">
               <strong>✓ Mensagem enviada com sucesso!</strong>
               <br />
               Entraremos em contato em breve.
@@ -216,10 +219,10 @@ export default function FormSection() {
           )}
 
           {/* NOME COMPLETO */}
-          <div className="mb-4 flex flex-col">
+          <div className="mb-3 flex flex-col md:mb-4">
             <label
               htmlFor="nome"
-              className="mb-2 text-xs tracking-widest text-anima-navy/40"
+              className="mb-1 text-[0.65rem] tracking-widest text-anima-navy/40 md:mb-2 md:text-xs"
             >
               NOME COMPLETO
             </label>
@@ -228,18 +231,18 @@ export default function FormSection() {
               type="text"
               name="nome"
               placeholder="Seu Nome"
-              className="border-2 border-gray-300 p-3 text-sm focus:border-anima-coral focus:outline-none disabled:cursor-not-allowed disabled:bg-gray-100"
+              className="border-2 border-gray-300 p-2 text-sm focus:border-anima-coral focus:outline-none disabled:cursor-not-allowed disabled:bg-gray-100 md:p-3"
               required
               disabled={loading}
             />
           </div>
 
           {/* E-MAIL E TELEFONE */}
-          <div className="mb-4 flex gap-3">
-            <div className="flex flex-1 flex-col">
+          <div className="mb-3 flex flex-col gap-3 md:mb-4 md:flex-row">
+            <div className="flex min-w-0 flex-1 flex-col">
               <label
                 htmlFor="email"
-                className="mb-2 text-xs tracking-widest text-anima-navy/40"
+                className="mb-1 text-[0.65rem] tracking-widest text-anima-navy/40 md:mb-2 md:text-xs"
               >
                 E-MAIL
               </label>
@@ -248,15 +251,15 @@ export default function FormSection() {
                 type="email"
                 name="email"
                 placeholder="exemplo@email.com"
-                className="border-2 border-gray-300 p-3 text-sm focus:border-anima-coral focus:outline-none disabled:cursor-not-allowed disabled:bg-gray-100"
+                className="w-full border-2 border-gray-300 p-2 text-sm focus:border-anima-coral focus:outline-none disabled:cursor-not-allowed disabled:bg-gray-100 md:p-3"
                 required
                 disabled={loading}
               />
             </div>
-            <div className="flex flex-1 flex-col">
+            <div className="flex min-w-0 flex-1 flex-col">
               <label
                 htmlFor="telefone"
-                className="mb-2 text-xs tracking-widest text-anima-navy/40"
+                className="mb-1 text-[0.65rem] tracking-widest text-anima-navy/40 md:mb-2 md:text-xs"
               >
                 TELEFONE
               </label>
@@ -265,7 +268,7 @@ export default function FormSection() {
                 type="tel"
                 name="telefone"
                 placeholder="(11) 90000-0000"
-                className="border-2 border-gray-300 p-3 text-sm focus:border-anima-coral focus:outline-none disabled:cursor-not-allowed disabled:bg-gray-100"
+                className="w-full border-2 border-gray-300 p-3 text-sm focus:border-anima-coral focus:outline-none disabled:cursor-not-allowed disabled:bg-gray-100"
                 required
                 disabled={loading}
               />
@@ -273,48 +276,66 @@ export default function FormSection() {
           </div>
 
           {/* MODALIDADE DE INTERESSE */}
-          <div className="mb-4 flex flex-col">
+          <div className="mb-3 flex min-w-0 flex-col md:mb-4">
             <label
               htmlFor="modalidade"
-              className="mb-2 text-xs tracking-widest text-anima-navy/40"
+              className="mb-1 text-[0.65rem] tracking-widest text-anima-navy/40 md:mb-2 md:text-xs"
             >
               MODALIDADE DE INTERESSE
             </label>
             <select
               id="modalidade"
               name="modalidade"
-              className="border-2 border-gray-300 p-3 text-sm text-anima-navy focus:border-anima-coral focus:outline-none disabled:cursor-not-allowed disabled:bg-gray-100"
+              className="w-full border-2 border-gray-300 p-2 text-xs text-anima-navy focus:border-anima-coral focus:outline-none disabled:cursor-not-allowed disabled:bg-gray-100 md:p-3 md:text-sm"
               required
               disabled={loading}
             >
-              <option value="">Selecione uma modalidade</option>
-              <option value="Ballet Infantil (3 a 8 anos)">
+              <option value="" className="text-xs md:text-sm">
+                Selecione uma modalidade
+              </option>
+              <option
+                value="Ballet Infantil (3 a 8 anos)"
+                className="text-xs md:text-sm"
+              >
                 Ballet Infantil (3 a 8 anos)
               </option>
-              <option value="Ballet Juvenil (9 a 16 anos)">
+              <option
+                value="Ballet Juvenil (9 a 16 anos)"
+                className="text-xs md:text-sm"
+              >
                 Ballet Juvenil (9 a 16 anos)
               </option>
-              <option value="Ballet Adulto (17+ anos)">
+              <option
+                value="Ballet Adulto (17+ anos)"
+                className="text-xs md:text-sm"
+              >
                 Ballet Adulto (17+ anos)
               </option>
-              <option value="Dança Contemporânea">Dança Contemporânea</option>
-              <option value="Aula Experimental">Aula Experimental</option>
+              <option
+                value="Dança Contemporânea"
+                className="text-xs md:text-sm"
+              >
+                Dança Contemporânea
+              </option>
+              <option value="Aula Experimental" className="text-xs md:text-sm">
+                Aula Experimental
+              </option>
             </select>
           </div>
 
           {/* MENSAGEM */}
-          <div className="mb-6 flex flex-col">
+          <div className="mb-4 flex flex-col md:mb-6">
             <label
               htmlFor="mensagem"
-              className="mb-2 text-xs tracking-widest text-anima-navy/40"
+              className="mb-1 text-[0.65rem] tracking-widest text-anima-navy/40 md:mb-2 md:text-xs"
             >
               MENSAGEM
             </label>
             <textarea
               id="mensagem"
               name="mensagem"
-              rows={6}
-              className="resize-none border-2 border-gray-300 p-3 text-sm focus:border-anima-coral focus:outline-none disabled:cursor-not-allowed disabled:bg-gray-100"
+              rows={4}
+              className="resize-none border-2 border-gray-300 p-2 text-sm focus:border-anima-coral focus:outline-none disabled:cursor-not-allowed disabled:bg-gray-100 md:p-3"
               placeholder="Fale um pouco do que você procura..."
               disabled={loading}
             />
@@ -324,7 +345,7 @@ export default function FormSection() {
           <button
             type="submit"
             disabled={loading}
-            className="mx-auto flex w-full items-center justify-center rounded-full bg-anima-navy p-3 text-xs tracking-widest text-white transition-all hover:bg-anima-navy/90 disabled:cursor-not-allowed disabled:opacity-50"
+            className="mx-auto flex w-full items-center justify-center rounded-full bg-anima-navy p-2.5 text-xs tracking-widest text-white transition-all hover:bg-anima-navy/90 disabled:cursor-not-allowed disabled:opacity-50 md:p-3"
           >
             {loading ? (
               <>

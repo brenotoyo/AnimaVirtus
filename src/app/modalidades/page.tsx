@@ -2,7 +2,7 @@
 import Header from '@/components/layout/Header';
 import InitialSection from '@/components/modalidades/InitialSection';
 import ModalidadesSection from '../../components/modalidades/modalidadesSection';
-import PhraseSection from '@/components/sobre/PhraseSection';
+import PhraseSection from '@/components/modalidades/PhraseSection';
 
 export const metadata = {
   title: 'Modalidades',

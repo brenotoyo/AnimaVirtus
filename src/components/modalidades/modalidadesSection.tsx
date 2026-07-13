@@ -2,18 +2,18 @@ import Image from 'next/image';
 
 export default function ModalidadesSection() {
   return (
-    <section className="bg-gradient-to-b from-anima-navy to-white px-8 py-10 md:px-16 lg:px-8">
+    <section className="bg-gradient-to-b from-anima-navy to-white px-4 py-0 md:px-8 md:py-24 lg:px-32">
       {/* Lista de modalidades */}
       <ul>
         {/* Baby Class */}
         <li
           id="ballet-infantil"
-          className="mx-auto mb-40 flex max-w-7xl scroll-mt-4 items-center justify-center gap-12"
+          className="mx-auto mb-16 flex max-w-7xl scroll-mt-4 flex-col items-center justify-center gap-8 md:mb-40 md:flex-row md:gap-12"
         >
           {/* Imagem à Esquerda */}
-          <div className="relative w-1/2">
+          <div className="relative w-full md:w-1/2">
             {/* Container da Imagem */}
-            <div className="relative z-10 aspect-[1/1] overflow-hidden rounded-2xl">
+            <div className="relative z-10 aspect-[6/4] overflow-hidden rounded-2xl md:aspect-[1/1]">
               <Image
                 src="/images/Ballet/crianças.jpg"
                 alt="Conservatório Ânima Virtus"
@@ -24,20 +24,22 @@ export default function ModalidadesSection() {
             </div>
           </div>
           {/* Texto à Direita */}
-          <div className="w-1/2">
-            <h4 className="mb-4 text-base font-bold uppercase tracking-widest text-anima-coral">
+          <div className="w-full md:w-1/2">
+            <h4 className="mb-4 text-sm font-bold uppercase tracking-widest text-anima-coral">
               PRIMEIRA INFÂNCIA
             </h4>
-            <h2 className="mb-6 font-serif text-5xl font-semibold text-white md:text-6xl">
+            <h2 className="mb-6 font-serif text-4xl font-semibold text-white md:text-5xl lg:text-6xl">
               Baby Class
             </h2>
-            <p className="text-lg leading-relaxed text-white/70">
-              Os primeiros passos no mundo da dança. Coordenação, musicalidade e
-              socialização através da brincadeira, eum um ambiente acolhedor e
-              lúcido.
-            </p>
+            <div className="space-y-6">
+              <p className="text-base leading-relaxed text-white/70 md:text-lg">
+                Os primeiros passos no mundo da dança. Coordenação, musicalidade
+                e socialização através da brincadeira, eum um ambiente acolhedor
+                e lúcido.
+              </p>
+            </div>
             <div className="mt-6 flex gap-10">
-              <div className="flex gap-3 text-base text-white/70">
+              <div className="flex gap-3 text-sm text-white/70 md:text-base">
                 <Image
                   src="/images/Icons/clock.svg"
                   alt="Relógio que identifica o tempo de aula"
@@ -46,7 +48,7 @@ export default function ModalidadesSection() {
                 />
                 <h4 className="font-sans">45 MIN</h4>
               </div>
-              <div className="flex gap-3 text-base text-white/70">
+              <div className="flex gap-3 text-sm text-white/70 md:text-base">
                 <Image
                   src="/images/Icons/people.svg"
                   alt="Relógio que identifica o tempo de aula"
@@ -62,24 +64,24 @@ export default function ModalidadesSection() {
         {/* Ballet Clássico */}
         <li
           id="ballet-classico"
-          className="mx-auto mb-36 flex max-w-7xl scroll-mt-24 items-center justify-center gap-12"
+          className="mx-auto mb-16 flex max-w-7xl scroll-mt-4 flex-col items-center justify-center gap-8 md:mb-40 md:flex-row md:gap-12"
         >
           {/* Texto à esquerda */}
-          <div className="w-1/2">
-            <h4 className="mb-4 text-base font-bold uppercase tracking-widest text-anima-coral">
+          <div className="order-2 w-full md:order-1 md:w-1/2">
+            <h4 className="mb-4 text-sm font-bold uppercase tracking-widest text-anima-coral">
               NÍVEL INICIANTE AO AVANÇADO
             </h4>
-            <h2 className="mb-6 font-serif text-5xl font-semibold text-white md:text-6xl">
+            <h2 className="mb-6 font-serif text-4xl font-semibold text-white md:text-5xl lg:text-6xl">
               Ballet Clássico
             </h2>
-            <div className="space-y-6 text-white/80">
-              <p className="text-lg leading-relaxed">
+            <div className="space-y-6">
+              <p className="text-base leading-relaxed text-white/70 md:text-lg">
                 A base de toda a dança. Trabalho de postura, alinhamento,
                 técnica de barra e centro, pontas e repertório. Aulas
                 progressivas que respeitam o tempo de cada corpo.
               </p>
               <div className="mt-6 flex gap-10">
-                <div className="flex gap-3 text-base text-white/70">
+                <div className="flex gap-3 text-sm text-white/70 md:text-base">
                   <Image
                     src="/images/Icons/clock.svg"
                     alt="Relógio que identifica o tempo de aula"
@@ -88,7 +90,7 @@ export default function ModalidadesSection() {
                   />
                   <h4 className="font-sans">60 - 90 MIN</h4>
                 </div>
-                <div className="flex gap-3 text-base text-white/70">
+                <div className="flex gap-3 text-sm text-white/70 md:text-base">
                   <Image
                     src="/images/Icons/people.svg"
                     alt="Relógio que identifica o tempo de aula"
@@ -101,9 +103,9 @@ export default function ModalidadesSection() {
             </div>
           </div>
           {/* Imagem à direita */}
-          <div className="relative w-1/2">
+          <div className="relative order-1 w-full md:w-1/2">
             {/* Container da Imagem */}
-            <div className="relative z-10 aspect-[1/1] overflow-hidden rounded-2xl">
+            <div className="relative z-10 aspect-[6/4] overflow-hidden rounded-2xl md:aspect-[1/1]">
               <Image
                 src="/images/Ballet/sapatilha.jpg"
                 alt="Conservatório Ânima Virtus"
@@ -118,12 +120,12 @@ export default function ModalidadesSection() {
         {/* Ballet Contemporâneo */}
         <li
           id="ballet-contemporaneo"
-          className="mx-auto mb-40 flex max-w-7xl scroll-mt-24 items-center justify-center gap-12"
+          className="mx-auto mb-16 flex max-w-7xl scroll-mt-4 flex-col items-center justify-center gap-8 md:mb-40 md:flex-row md:gap-12"
         >
           {/* Imagem à Esquerda */}
-          <div className="relative w-1/2">
+          <div className="relative w-full md:w-1/2">
             {/* Container da Imagem */}
-            <div className="relative z-10 aspect-[1/1] overflow-hidden rounded-2xl">
+            <div className="relative z-10 aspect-[6/4] overflow-hidden rounded-2xl md:aspect-[1/1]">
               <Image
                 src="/images/Ballet/bailarina.jpg"
                 alt="Conservatório Ânima Virtus"
@@ -134,20 +136,22 @@ export default function ModalidadesSection() {
             </div>
           </div>
           {/* Texto à Direita */}
-          <div className="w-1/2">
-            <h4 className="mb-4 text-base font-bold uppercase tracking-widest text-anima-coral">
+          <div className="w-full md:w-1/2">
+            <h4 className="mb-4 text-sm font-bold uppercase tracking-widest text-anima-coral">
               NÍVEL INTERMEDIÁRIO
             </h4>
-            <h2 className="mb-6 font-serif text-5xl font-semibold text-anima-navy md:text-6xl">
+            <h2 className="mb-6 font-serif text-4xl font-semibold text-anima-navy md:text-5xl lg:text-6xl">
               Dança Contemporânea
             </h2>
-            <p className="text-lg leading-relaxed text-anima-navy/70">
-              Liberdade de movimento, peso, queda e recuperação. Exploração da
-              expressão pessoal a partir de uma base técnica sólida, com
-              improvisação e composição
-            </p>
+            <div className="space-y-6">
+              <p className="text-base leading-relaxed text-anima-navy/70 md:text-lg">
+                Liberdade de movimento, peso, queda e recuperação. Exploração da
+                expressão pessoal a partir de uma base técnica sólida, com
+                improvisação e composição
+              </p>
+            </div>
             <div className="mt-6 flex gap-10">
-              <div className="flex gap-3 text-base text-anima-navy/70">
+              <div className="flex gap-3 text-sm text-anima-navy/70 md:text-base">
                 <Image
                   src="/images/Icons/clock.svg"
                   alt="Relógio que identifica o tempo de aula"
@@ -156,7 +160,7 @@ export default function ModalidadesSection() {
                 />
                 <h4 className="font-sans">75 MIN</h4>
               </div>
-              <div className="flex gap-3 text-base text-anima-navy/70">
+              <div className="md:textbase flex gap-3 text-sm text-anima-navy/70">
                 <Image
                   src="/images/Icons/people.svg"
                   alt="Relógio que identifica o tempo de aula"
@@ -172,25 +176,25 @@ export default function ModalidadesSection() {
         {/* Ballet X */}
         <li
           id="ballet-x"
-          className="mx-auto mb-36 flex max-w-7xl items-center justify-center gap-12"
+          className="mx-auto mb-16 flex max-w-7xl scroll-mt-4 flex-col items-center justify-center gap-8 md:mb-40 md:flex-row md:gap-12"
         >
           {/* Texto à esquerda */}
-          <div className="w-1/2">
-            <h4 className="mb-4 text-base font-bold uppercase tracking-widest text-anima-coral">
+          <div className="order-2 w-full md:order-1 md:w-1/2">
+            <h4 className="mb-4 text-sm font-bold uppercase tracking-widest text-anima-coral">
               NÍVEL DESCONHECIDO
             </h4>
-            <h2 className="mb-6 font-serif text-5xl font-semibold text-anima-navy md:text-6xl">
+            <h2 className="mb-6 font-serif text-4xl font-semibold text-anima-navy md:text-5xl lg:text-6xl">
               Mais uma Modalidade
             </h2>
-            <div className="space-y-6 text-anima-navy/80">
-              <p className="text-lg leading-relaxed">
+            <div className="space-y-6">
+              <p className="text-base leading-relaxed text-anima-navy/80 md:text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloremque commodi dicta enim omnis voluptatem consectetur
                 iusto, veritatis nulla nemo sequi facilis accusantium,
                 laudantium corrupti quod aut distinctio quidem maiores. A.
               </p>
               <div className="mt-6 flex gap-10">
-                <div className="flex gap-3 text-base text-anima-navy/70">
+                <div className="flex gap-3 text-sm text-anima-navy/70 md:text-base">
                   <Image
                     src="/images/Icons/clock.svg"
                     alt="Relógio que identifica o tempo de aula"
@@ -199,7 +203,7 @@ export default function ModalidadesSection() {
                   />
                   <h4 className="font-sans">X - Y MIN</h4>
                 </div>
-                <div className="flex gap-3 text-base text-anima-navy/70">
+                <div className="flex gap-3 text-sm text-anima-navy/70 md:text-base">
                   <Image
                     src="/images/Icons/people.svg"
                     alt="Relógio que identifica o tempo de aula"
@@ -212,9 +216,9 @@ export default function ModalidadesSection() {
             </div>
           </div>
           {/* Imagem à direita */}
-          <div className="relative w-1/2">
+          <div className="relative order-1 w-full md:w-1/2">
             {/* Container da Imagem */}
-            <div className="relative z-10 aspect-[1/1] overflow-hidden rounded-2xl">
+            <div className="relative z-10 aspect-[6/4] overflow-hidden rounded-2xl md:aspect-[1/1]">
               <Image
                 src="/images/Ballet/Aula.jpg"
                 alt="Conservatório Ânima Virtus"
