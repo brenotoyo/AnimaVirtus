@@ -15,7 +15,7 @@ export default function InstitutionSection() {
             {/* Container da Imagem */}
             <div className="relative z-10 aspect-[6/4] overflow-hidden">
               <Image
-                src="/images/Ballet/historia.jpg"
+                src="/images/ballet/historia.jpg"
                 alt="Conservatório Ânima Virtus"
                 fill
                 className="object-cover"
@@ -73,7 +73,7 @@ export default function InstitutionSection() {
             {/* Container da Imagem */}
             <div className="relative z-10 aspect-[6/4] overflow-hidden">
               <Image
-                src="/images/Ballet/Aula.jpg"
+                src="/images/ballet/aula.jpg"
                 alt="Conservatório Ânima Virtus"
                 fill
                 className="object-cover"

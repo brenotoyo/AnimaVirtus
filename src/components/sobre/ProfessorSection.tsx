@@ -13,7 +13,7 @@ export default function ProfessorSection() {
             {/* Container da Imagem */}
             <div className="relative z-10 aspect-[6/4] overflow-hidden rounded-3xl md:aspect-[5/6]">
               <Image
-                src="/images/Ballet/ester2.png"
+                src="/images/ballet/ester2.png"
                 alt="Conservatório Ânima Virtus"
                 fill
                 className="object-cover"
@@ -82,7 +82,7 @@ export default function ProfessorSection() {
             {/* Container da Imagem */}
             <div className="relative z-10 aspect-[6/4] overflow-hidden rounded-3xl md:aspect-[5/6]">
               <Image
-                src="/images/Ballet/professora1.jpg"
+                src="/images/ballet/professora1.jpg"
                 alt="Conservatório Ânima Virtus"
                 fill
                 className="object-cover"
@@ -99,7 +99,7 @@ export default function ProfessorSection() {
             {/* Container da Imagem */}
             <div className="relative z-10 aspect-[6/4] overflow-hidden rounded-3xl md:aspect-[5/6]">
               <Image
-                src="/images/Ballet/professora2.jpg"
+                src="/images/ballet/professora2.jpg"
                 alt="Conservatório Ânima Virtus"
                 fill
                 className="object-cover"

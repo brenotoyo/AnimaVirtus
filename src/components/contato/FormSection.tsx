@@ -116,7 +116,7 @@ export default function FormSection() {
             <li className="flex items-center gap-3 md:gap-4">
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-anima-coral/15 md:h-10 md:w-10">
                 <Image
-                  src="/images/Icons/location.svg"
+                  src="/images/icons/location.svg"
                   alt="Ícone de localização"
                   width={16}
                   height={16}
@@ -135,7 +135,7 @@ export default function FormSection() {
             <li className="flex items-center gap-3 md:gap-4">
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-anima-coral/15 md:h-10 md:w-10">
                 <Image
-                  src="/images/Icons/phone.svg"
+                  src="/images/icons/phone.svg"
                   alt="Ícone de telefone"
                   width={16}
                   height={16}
@@ -153,7 +153,7 @@ export default function FormSection() {
             <li className="flex items-center gap-3 md:gap-4">
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-anima-coral/15 md:h-10 md:w-10">
                 <Image
-                  src="/images/Icons/envelope.svg"
+                  src="/images/icons/envelope.svg"
                   alt="Ícone de e-mail"
                   width={16}
                   height={16}
@@ -171,7 +171,7 @@ export default function FormSection() {
             <li className="flex items-center gap-3 md:gap-4">
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-anima-coral/15 md:h-10 md:w-10">
                 <Image
-                  src="/images/Icons/clock.svg"
+                  src="/images/icons/clock.svg"
                   alt="Ícone de horários"
                   width={16}
                   height={16}

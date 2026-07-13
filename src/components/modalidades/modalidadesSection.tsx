@@ -15,7 +15,7 @@ export default function ModalidadesSection() {
             {/* Container da Imagem */}
             <div className="relative z-10 aspect-[6/4] overflow-hidden rounded-2xl md:aspect-[1/1]">
               <Image
-                src="/images/Ballet/crianças.jpg"
+                src="/images/ballet/criancas.jpg"
                 alt="Conservatório Ânima Virtus"
                 fill
                 className="object-cover"
@@ -41,7 +41,7 @@ export default function ModalidadesSection() {
             <div className="mt-6 flex gap-10">
               <div className="flex gap-3 text-sm text-white/70 md:text-base">
                 <Image
-                  src="/images/Icons/clock.svg"
+                  src="/images/icons/clock.svg"
                   alt="Relógio que identifica o tempo de aula"
                   height={16}
                   width={16}
@@ -50,7 +50,7 @@ export default function ModalidadesSection() {
               </div>
               <div className="flex gap-3 text-sm text-white/70 md:text-base">
                 <Image
-                  src="/images/Icons/people.svg"
+                  src="/images/icons/people.svg"
                   alt="Relógio que identifica o tempo de aula"
                   height={16}
                   width={16}
@@ -83,7 +83,7 @@ export default function ModalidadesSection() {
               <div className="mt-6 flex gap-10">
                 <div className="flex gap-3 text-sm text-white/70 md:text-base">
                   <Image
-                    src="/images/Icons/clock.svg"
+                    src="/images/icons/clock.svg"
                     alt="Relógio que identifica o tempo de aula"
                     height={16}
                     width={16}
@@ -92,7 +92,7 @@ export default function ModalidadesSection() {
                 </div>
                 <div className="flex gap-3 text-sm text-white/70 md:text-base">
                   <Image
-                    src="/images/Icons/people.svg"
+                    src="/images/icons/people.svg"
                     alt="Relógio que identifica o tempo de aula"
                     height={16}
                     width={16}
@@ -107,7 +107,7 @@ export default function ModalidadesSection() {
             {/* Container da Imagem */}
             <div className="relative z-10 aspect-[6/4] overflow-hidden rounded-2xl md:aspect-[1/1]">
               <Image
-                src="/images/Ballet/sapatilha.jpg"
+                src="/images/ballet/sapatilha.jpg"
                 alt="Conservatório Ânima Virtus"
                 fill
                 className="object-cover"
@@ -127,7 +127,7 @@ export default function ModalidadesSection() {
             {/* Container da Imagem */}
             <div className="relative z-10 aspect-[6/4] overflow-hidden rounded-2xl md:aspect-[1/1]">
               <Image
-                src="/images/Ballet/bailarina.jpg"
+                src="/images/ballet/bailarina.jpg"
                 alt="Conservatório Ânima Virtus"
                 fill
                 className="object-cover"
@@ -153,7 +153,7 @@ export default function ModalidadesSection() {
             <div className="mt-6 flex gap-10">
               <div className="flex gap-3 text-sm text-anima-navy/70 md:text-base">
                 <Image
-                  src="/images/Icons/clock.svg"
+                  src="/images/icons/clock.svg"
                   alt="Relógio que identifica o tempo de aula"
                   height={16}
                   width={16}
@@ -162,7 +162,7 @@ export default function ModalidadesSection() {
               </div>
               <div className="md:textbase flex gap-3 text-sm text-anima-navy/70">
                 <Image
-                  src="/images/Icons/people.svg"
+                  src="/images/icons/people.svg"
                   alt="Relógio que identifica o tempo de aula"
                   height={16}
                   width={16}
@@ -196,7 +196,7 @@ export default function ModalidadesSection() {
               <div className="mt-6 flex gap-10">
                 <div className="flex gap-3 text-sm text-anima-navy/70 md:text-base">
                   <Image
-                    src="/images/Icons/clock.svg"
+                    src="/images/icons/clock.svg"
                     alt="Relógio que identifica o tempo de aula"
                     height={16}
                     width={16}
@@ -205,7 +205,7 @@ export default function ModalidadesSection() {
                 </div>
                 <div className="flex gap-3 text-sm text-anima-navy/70 md:text-base">
                   <Image
-                    src="/images/Icons/people.svg"
+                    src="/images/icons/people.svg"
                     alt="Relógio que identifica o tempo de aula"
                     height={16}
                     width={16}
@@ -220,7 +220,7 @@ export default function ModalidadesSection() {
             {/* Container da Imagem */}
             <div className="relative z-10 aspect-[6/4] overflow-hidden rounded-2xl md:aspect-[1/1]">
               <Image
-                src="/images/Ballet/Aula.jpg"
+                src="/images/ballet/aula.jpg"
                 alt="Conservatório Ânima Virtus"
                 fill
                 className="object-cover"
