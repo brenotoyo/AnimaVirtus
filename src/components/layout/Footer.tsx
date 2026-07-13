@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="col-span-2 flex flex-col items-center text-center md:items-start md:text-left">
             <Link href="/" className="mb-6">
               <Image
-                src="/images/logos/Logo-Horizontal-SemFundoC.png"
+                src="/images/logos/logo-horizontal-semfundoc.png"
                 alt="Ânima Virtus"
                 width={200}
                 height={60}

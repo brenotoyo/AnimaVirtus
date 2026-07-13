@@ -9,7 +9,7 @@ const modalidades = [
     description:
       'Introdução lúdica ao ballet clássico para crianças de 3 a 8 anos, desenvolvendo coordenação, musicalidade e expressão.',
     age: '3 a 8 anos',
-    image: '/images/Ballet/crianças.jpg',
+    image: '/images/ballet/criancas.jpg',
     anchor: 'ballet-infantil',
   },
   {
@@ -18,7 +18,7 @@ const modalidades = [
     description:
       'Aulas para iniciantes e avançados adultos, focando em técnica, flexibilidade e bem-estar.',
     age: 'A partir de 17 anos',
-    image: '/images/Ballet/Sapatilha.jpg',
+    image: '/images/ballet/sapatilha.jpg',
     anchor: 'ballet-classico',
   },
   {
@@ -27,7 +27,7 @@ const modalidades = [
     description:
       'Exploração criativa do movimento, combinando técnicas modernas com expressão artística.',
     age: 'Todas as idades',
-    image: '/images/Ballet/bailarina.jpg',
+    image: '/images/ballet/bailarina.jpg',
     anchor: 'ballet-contemporaneo',
   },
 ];

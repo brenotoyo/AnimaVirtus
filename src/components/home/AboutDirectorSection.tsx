@@ -14,7 +14,7 @@ export default function AboutDirectorSection() {
           {/* Container da Imagem */}
           <div className="relative z-10 aspect-[2/2] overflow-hidden md:aspect-[7/6] lg:aspect-[5/6]">
             <Image
-              src="/images/Ballet/ester.png"
+              src="/images/ballet/ester.png"
               alt="Ester Rufino - Diretora Artística"
               fill
               className="object-cover"

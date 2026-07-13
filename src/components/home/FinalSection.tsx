@@ -9,7 +9,7 @@ export default function FinalSection() {
         <div className="absolute inset-0">
           {/* Imagem de Fundo */}
           <Image
-            src="/images/Ballet/bailarinas.jpg"
+            src="/images/ballet/bailarinas.jpg"
             alt="Bailarinas em ensaio"
             fill
             className="object-cover"
