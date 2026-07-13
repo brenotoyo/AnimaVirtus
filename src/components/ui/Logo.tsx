@@ -11,7 +11,7 @@ export default function Logo({
   className = '',
 }: LogoProps) {
   const logos = {
-    horizontal: '/images/logos/logo-horizontal-semfundo.png',
+    horizontal: '/images/logos/logo-horizontal-semfundoc.png',
     vertical: '/images/logos/logo-vertical-semfundo.png',
     monograma: '/images/logos/monograma-semfundo.png',
   };
