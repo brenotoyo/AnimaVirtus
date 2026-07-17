@@ -2,9 +2,6 @@
 
 > Uma página institucional, para promover e dar visibilidade as aulas oferecidas.
 
-![Badge License](https://img.shields.io/github/license/usuario/tasks-master)
-![Badge Stars](https://img.shields.io/github/stars/usuario/tasks-master)
-
 ## 🚀 Sobre o Projeto
 O **Ânima Virtus** foi criado com a função de dar vitrine ao corpo docente e principalmente as aulas de ballet, também permite
 a aproximação do potêncial aluno, via formulário ou links que direcionam a algum canal de comunicação.
