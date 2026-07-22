@@ -81,7 +81,7 @@ export default function Hero() {
         {/* Redes Sociais */}
         <div className="flex justify-center gap-3 px-4 pb-6 text-xs text-white drop-shadow-lg md:justify-end md:gap-4 md:px-8 md:pb-8 md:text-sm">
           <a
-            href="https://cdn.abacus.ai/images/e7ce01c9-3050-4e65-9c62-349779f32a4a.png"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-anima-coral"
@@ -89,7 +89,7 @@ export default function Hero() {
             Facebook
           </a>
           <a
-            href="https://cdn.abacus.ai/images/e7ce01c9-3050-4e65-9c62-349779f32a4a.png"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-anima-coral"
@@ -97,7 +97,7 @@ export default function Hero() {
             Instagram
           </a>
           <a
-            href="https://cdn.abacus.ai/images/e7ce01c9-3050-4e65-9c62-349779f32a4a.png"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-anima-coral"
